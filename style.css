@@ -1,0 +1,646 @@
+body{
+    margin: 0;
+    font-family: "Playfair Display", "Roboto", sans-serif;
+    font-size: 14px;
+}
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+p {
+    margin: 0 0 10px 0;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+/*Header***********************************************/
+
+.header{
+        position: absolute;
+        width: 100%;
+        height: 60px;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        background: white;
+}
+
+.header.fixed{
+    height: auto;
+    position: fixed;
+    background: white;
+}
+
+.header.fixed .hed_menu{
+
+    padding: 10px 0;
+}
+
+.hed_menu{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+}
+
+.log_menu{
+    width: 20%;
+}
+
+.info_menu{
+    width: 20%;
+    text-align: center;
+}
+
+
+.mmenuu{
+    position: relative;
+    list-style: none;
+    width: 60%;
+}
+.mmenuu>li{
+    display: inline-block;
+}
+
+.mmenuu a{
+    width: 100%;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 20px 15px;
+    font-weight: bold;
+    display: block;
+}
+
+.mmenuu li:hover{
+    background: deepskyblue;
+}
+
+
+.mmenuu li>a:hover{
+    color: white;
+}
+
+
+.ssubmenuu{
+    position: absolute;
+    display: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    list-style: none;
+}
+
+.ssubmenuu a{
+    color: white;
+}
+
+
+.mmenuu>li:hover .ssubmenuu{
+    background: deepskyblue;
+    color: white;
+    transition-duration: .8s;
+    display: inline-block;
+}
+
+.ssubmenuu li>a:hover{
+    color: black;
+}
+
+/*iner***********************************************/
+
+
+.iner{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url('images/block1/fon4.jpg') center no-repeat;
+}
+.reviews_slider{
+    height: 330px;
+    overflow: hidden;
+}
+
+.slick-prev{
+    position: fixed;
+    width: 100%;
+    max-width: 50px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 50px;
+    background: deepskyblue;
+    text-align: center;
+    left: 20px;
+    top: 400px;
+    opacity: .5;
+
+
+}
+.slick-next{
+    position: fixed;
+    width: 100%;
+    max-width: 50px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 50px;
+    background: deepskyblue;
+    text-align: center;
+    right: 20px;
+    top: 400px;
+    opacity: .5;
+}
+.slick-prev:hover{
+    opacity: 1;
+}
+
+.slick-next:hover{
+    opacity: 1;
+}
+
+.inner_content{
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+    margin: 50px auto;
+    text-align: center;
+    color: white;
+    
+}
+
+.in_title h1{
+    font-size: 60px;
+    padding: 10px 0;
+    font-family: Roboto;
+}
+.in_title h5{
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 50px;
+}
+
+.in_but{
+    background: deepskyblue;
+    font-size: 15px;
+    border: 1px solid;
+    border-radius: 40px;
+    padding: 20px 45px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.in_but:hover{
+    background: white;
+    color: black;
+    transition-duration: .8s;
+}
+
+/*services*******************************************************************/
+
+.services{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 40px auto;
+}
+
+.services_content h3{
+    font-size: 35px;
+    font-weight: 500;
+    font-family: Roboto;
+}
+.services_content h1{
+    font-size: 60px;
+    font-family: Roboto;
+    margin-bottom: 30px;
+}
+
+
+.s_block{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.s_b1{
+    width: 20%;
+    margin: 40px 30px;
+}
+
+.s_b1 h1{
+    font-size: 20px;
+    margin: 30px 0;
+}
+
+
+.s_img{
+    width: 70px;
+    height: 70px;
+}
+
+.services_content a{
+    background: deepskyblue;
+    font-size: 15px;
+    border: 1px solid;
+    border-radius: 40px;
+    padding: 20px 45px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.services_content a:hover{
+    background: black;
+    transition-duration: .8s;
+}
+
+/*case*****************************************************/
+
+.case{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 40px 0;
+}
+
+.case_inner{
+    display: flex;
+}
+.case_1{
+    width: 50%;
+}
+.case_1 img{
+    height: 500px;
+    width: 100%;
+}
+
+
+.case_2{
+    width: 50%;
+    height: 500px;
+    background: url('images/block3/b3_2.jpg');
+    color: white;
+    padding: 20px 20px;
+}
+
+.case_2 h1{
+    font-size: 60px;
+    font-family: Roboto;
+}
+
+
+.case_2 h5{
+    font-size: 30px;
+    padding: 20px 0;
+    font-weight: 500;
+}
+
+.case_2 p{
+    font-size: 17px;
+    margin-bottom: 70px;
+}
+
+.case_2 a{
+    font-size: 15px;
+    border: 1px solid;
+    border-radius: 40px;
+    padding: 20px 45px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.case_2 a:hover{
+    background: white;
+    color: black;
+    transition-duration: .8s;
+}
+
+/*business**************************************************/
+.business{
+    width: 100%;
+    height: auto;
+    margin: 50px 0;
+}
+
+.business_inner{
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+.bus_content{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 40px 0;
+}
+
+.bus_info{
+    width: 33.33333%;
+    height: auto;
+    margin: 0 10px;
+    text-align: justify;
+}
+
+.bus_info img{
+    width: 100%;
+}
+
+.business_inner > h3{
+    font-size: 35px;
+    font-weight: 500;
+    font-family: Roboto;
+}
+
+
+.business_inner > h1{
+    font-size: 60px;
+    font-family: Roboto;
+    margin-bottom: 30px;
+}
+
+.bus_info h5{
+    margin: 20px 0;
+    font-size: 20px;
+    font-family: Roboto;
+    font-weight: 500;
+}
+.bus_info h5 i{
+    color: deepskyblue;
+    padding-right: 10px;
+}
+
+.bus_info h1{
+    font-family: Roboto;
+    text-align: left;
+}
+
+.bus_info p{
+    margin-top: 20px;
+    line-height: 20px;
+}
+
+.business_inner a{
+    background: deepskyblue;
+    font-size: 15px;
+    border: 1px solid;
+    border-radius: 40px;
+    padding: 20px 45px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.business_inner a:hover{
+    background: black;
+    transition-duration: .8s;
+}
+
+/*number*****************************************************/
+
+.number{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 60px 0;
+    color: white;
+    background: url('images/b5.jpg') center no-repeat;
+}
+
+.number h3{
+    font-size: 35px;
+    font-weight: 500;
+    font-family: Roboto;
+    margin: 20px 0;
+}
+
+.number h1{
+    font-size: 60px;
+    font-family: Roboto;
+    margin-bottom: 70px;
+}
+
+.number_inner{
+    width: 100%;
+    display: flex;
+}
+
+.num_f{
+    width: 20%;
+    margin: 0 40px;
+}
+
+.num_f h1{
+    
+    border: 3px solid;
+    border-radius: 50%;
+    padding: 60px 0;
+
+}
+
+.num_f h5{
+    font-size: 25px;
+    font-family: Roboto;
+    font-weight: 500;
+}
+
+/*read****************************************************/
+
+.read{
+    width: 100%;
+    height: auto;
+    margin: 50px 0;
+}
+
+.read_inner{
+    text-align: center;
+
+}
+.read_inner > h3{
+    font-size: 35px;
+    font-weight: 500;
+    font-family: Roboto;
+}
+
+.read_inner > h1{
+    font-size: 60px;
+    font-family: Roboto;
+    margin-bottom: 70px;
+}
+
+.r_people{
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+}
+.r_people1{
+    width: 50%;
+    display: flex;
+    margin: 0 10px;
+}
+.r_people1 img{
+    width: 30%;
+    height: 170px;
+}
+.people_t{
+    width: 70%;
+    text-align: left;
+    margin: 50px 0 0;
+    padding: 0 30px;
+    line-height: 20px;
+}
+
+.people_t h5{
+    font-size: 20px;
+}
+
+/*revenue***************************************************/
+
+.revenue{
+
+    text-align: center;
+    color: white;
+    background: url('images/b7.jpg') center no-repeat;
+    margin: 50px 0;
+    padding: 70px 0 100px;
+}
+
+.revenue h2{
+    font-weight: 500;
+    font-size: 40px;
+    font-family: Roboto;
+}
+
+.revenue h1{
+    font-size: 80px;
+    font-family: Roboto;
+    margin-bottom: 50px;
+}
+
+.revenue a{
+    font-size: 15px;
+    border: 1px solid;
+    border-radius: 40px;
+    padding: 20px 45px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.revenue a:hover{
+    color: black;
+    background: white;
+    transition-duration: 0.8s;
+}
+
+
+/*form****************************************************/
+
+.forms{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.forms h2{ 
+    font-size: 35px;
+    font-weight: 500;
+    font-family: Roboto;
+}
+
+.forms h1{
+    font-size: 50px;
+    color: deepskyblue;
+    font-family: Roboto;
+    margin-bottom: 30px;
+}
+.forms h3{
+    font-size: 22px;
+    font-weight: 700;
+    font-family: Roboto;
+}
+
+
+
+.fo_text{
+    display: block;
+    margin-bottom: 50px;
+}
+.fo_text input{
+    margin: 15px 0;
+    width: 700px;
+    padding: 15px 10px;
+    font-size: 25px;
+    background: darkgray;
+}
+
+
+
+.forms a{
+    background: deepskyblue;
+    font-size: 15px;
+    border: 1px solid;
+    border-radius: 40px;
+    padding: 20px 45px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.forms a:hover{
+    background: black;
+    transition-duration: .8s;
+}
+
+/*bottom********************************************************/
+
+.bottom{
+    padding: 40px 0;
+    text-align: center;
+    background: black;
+    color: white;
+}
+
+/*up**********************************************************/
+
+
+.up_button{
+    
+    width: 100%;
+    max-width: 100px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: deepskyblue;
+    text-align: center;
+    bottom:50px;
+    left: 50px;
+    position: fixed;
+    text-decoration: none;
+    opacity: 0;
+}
+
+.up_button b{
+    color: white;
+}
+
+
+
+
+
